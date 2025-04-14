@@ -16,8 +16,8 @@ class BST { // Binary Search Tree
 	bool existsUtil(Node<T>*, const T& val) const;
 
 	void preorderUtil(Node<T>* node, std::stringstream& result) const;
-    void inorderUtil(Node<T>* node, std::stringstream& result) const;
-    void postorderUtil(Node<T>* node, std::stringstream& result) const;
+        void inorderUtil(Node<T>* node, std::stringstream& result) const;
+        void postorderUtil(Node<T>* node, std::stringstream& result) const;
 
 	void copyUtil(Node<T>*& dest, Node<T>* src) const;
 	void destroyUtil(Node<T>* node);
@@ -36,8 +36,8 @@ class BST { // Binary Search Tree
 	bool exists(const T& val) const;
 	
 	std::string preorder() const;
-    std::string inorder() const;
-    std::string postorder() const;
+    	std::string inorder() const;
+    	std::string postorder() const;
 
 	//Operator Overloads
 	BST<T>& operator+(const T& val);
@@ -68,7 +68,7 @@ BST<T>::BST(std::vector<T>& values) {
 
 template<typename T>
 BST<T>::~BST() {
-    destroyUtil(root);
+	destroyUtil(root);
 }
 
 // Public methods
